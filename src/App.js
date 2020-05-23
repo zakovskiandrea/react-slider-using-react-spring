@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { useTransition, animated, config } from "react-spring";
+import { useTransition, animated } from "react-spring";
 import Arrow from "./Arrow";
 import Dots from "./Dots";
 import { easeCircle } from "d3-ease";
@@ -17,7 +17,6 @@ const slides = imageUrls.map((url) => ({ style }) => (
     className="slide"
     style={{
       ...style,
-
       backgroundImage: `url(${url})`,
     }}
   ></animated.div>
